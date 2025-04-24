@@ -1,0 +1,114 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    background: var(--tg-theme-bg-color, #ffffff);
+    color: var(--tg-theme-text-color, #000000);
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.emoji {
+    font-size: 80px;
+    margin: 40px 0 30px;
+    animation: bounce 2s infinite;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+.warning {
+    color: var(--tg-theme-hint-color, #e74c3c);
+    font-size: 14px;
+    text-align: center;
+    max-width: 280px;
+    margin: 0 0 30px;
+    line-height: 1.4;
+}
+
+.timer-container {
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+.timer {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--tg-theme-button-color, #2481cc);
+    margin: 0 0 5px;
+}
+
+.timer-label {
+    font-size: 14px;
+    color: var(--tg-theme-hint-color, #707579);
+}
+
+.btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: none;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.primary {
+    background: var(--tg-theme-button-color, #2481cc);
+    color: var(--tg-theme-button-text-color, #ffffff);
+}
+
+.secondary {
+    background: rgba(36, 129, 204, 0.1);
+    color: var(--tg-theme-button-color, #2481cc);
+    border: 1px solid var(--tg-theme-button-color, #2481cc);
+}
+
+.footer-text {
+    margin-top: auto;
+    padding: 20px 0;
+    color: var(--tg-theme-hint-color, #707579);
+    font-size: 14px;
+    text-align: center;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s ease;
+}
+
+.fade-in.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
