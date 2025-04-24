@@ -8,10 +8,6 @@ body {
     overflow: hidden;
 }
 
-body[data-theme='dark'] {
-    background: var(--tg-theme-secondary-bg-color, #f4f4f5); /* Серый фон для темной темы, используем вторичный фон */
-}
-
 .container {
     padding: 20px;
     text-align: center;
@@ -23,7 +19,7 @@ body[data-theme='dark'] {
 }
 
 .emoji-large {
-    font-size: 90px;
+    font-size: 110px;
     margin-bottom: 20px;
 }
 
