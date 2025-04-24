@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background: var(--tg-theme-bg-color, #fff);
-    color: var(--tg-theme-text-color, #000);
+    color: var(--tg-theme-text-color, #131313);
     height: 100vh;
     overflow: hidden;
 }
