@@ -6,13 +6,16 @@ body {
     color: var(--tg-theme-text-color, #000);
     height: 100vh;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
 }
 
 .container {
-    text-align: center;
     padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 20px; /* Перемещаем элементы в верхнюю часть экрана */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Устанавливаем контейнер на всю ширину */
 }
 
 .emoji-large {
@@ -34,6 +37,7 @@ body {
 
 .timer-container {
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .timer {
@@ -45,7 +49,35 @@ body {
 .timer-text {
     font-size: 16px;
     color: var(--tg-theme-hint-color, #707579);
-    margin-top: 10px;
+}
+
+.btn {
+    display: block;
+    width: 90%; /* Ширина кнопки 90% от ширины экрана */
+    margin: 10px auto; /* Центрируем кнопку */
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+.btn.transparent {
+    background: rgba(36, 129, 204, 0.1);
+    color: var(--tg-theme-button-color, #2481cc);
+    border: 1px solid var(--tg-theme-button-color, #2481cc);
+}
+
+.btn.transparent:hover {
+    background: rgba(36, 129, 204, 0.2);
+}
+
+.btn.primary {
+    background: var(--tg-theme-button-color, #2481cc);
+    color: var(--tg-theme-button-text-color, #ffffff);
 }
 
 .fade-in {

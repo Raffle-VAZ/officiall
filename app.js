@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Таймер
     const timerEl = document.getElementById('timer');
     const deadline = new Date();
-    deadline.setHours(22, 0, 0, 0);
+    deadline.setHours(12, 0, 0, 0);
     if (deadline < new Date()) deadline.setDate(deadline.getDate() + 1); // Если уже позже 22:00
 
     function updateTimer() {
