@@ -3,44 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Розыгрыш 5000₽</title>
+    <title>Участие в розыгрыше</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="hero">
-            <img src="img/Party Popper.webp" alt="🎉" class="emoji bounce" id="partyPopper">
-            <div class="shine"></div>
-        </div>
-
-        <h1 class="title fade-in">Вы участвуете<br>в розыгрыше!</h1>
-
-        <div class="warning fade-in">
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
-            </svg>
-            Не отписывайтесь от каналов до окончания розыгрыша!
-        </div>
-
+        <div class="emoji-large fade-in">🎉</div>
+        <div class="title fade-in">Вы участвуете в розыгрыше!</div>
+        <div class="subtitle fade-in">Не отписывайтесь от канала до окончания розыгрыша!</div>
         <div class="timer-container fade-in">
-            <div class="timer pulse" id="timer">00:00:00</div>
-            <div class="timer-label">До завершения</div>
-        </div>
-
-        <div class="buttons">
-            <button class="btn primary fade-in" id="detailsBtn">
-                <span>Подробнее о розыгрыше</span>
-                <div class="hover-effect"></div>
-            </button>
-            <button class="btn secondary fade-in" id="otherBtn">
-                <span>Другие розыгрыши</span>
-                <div class="hover-effect"></div>
-            </button>
-        </div>
-
-        <div class="footer-text fade-in">
-            Хочешь быть в курсе всех розыгрышей?
+            <div class="timer" id="timer">00:00:00</div>
+            <div class="timer-text">До завершения</div>
         </div>
     </div>
 
